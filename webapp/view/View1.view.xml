@@ -1,0 +1,79 @@
+<mvc:View
+    controllerName="com.sap.supplier.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+    xmlns:uxap="sap.uxap"
+    xmlns:core="sap.ui.core"
+    xmlns:semantic="sap.f.semantic"
+     xmlns:upload="sap.m.upload"
+    xmlns:u="sap.ui.unified"
+    xmlns:f="sap.ui.layout.form"
+    xmlns:table="sap.ui.table"
+    xmlns:t="sap.f"
+>
+    <Page
+        id="page"
+        title="{i18n>title}"
+    >
+        <content>
+            <Table
+                id="Table"
+                items="{myModel>/}"
+            >
+                <columns>
+                    <Column id="_IDGenColumn11">
+                        <Text
+                            id="_IDGenText22"
+                            text="Supplier ID"
+                        />
+                    </Column>
+                    <Column id="_IDGenColumn1">
+                        <Text
+                            id="_IDGenText2"
+                            text="SM Vendor ID"
+                        />
+                    </Column>
+                    <Column id="_IDGenColumn2">
+                        <Text
+                            id="_IDGenText3"
+                            text="ACM ID"
+                        />
+                    </Column>
+                    <Column id="_IDGenColumn4">
+                        <Text
+                            id="_IDGenText41"
+                            text="ERP ID"
+                        />
+                    </Column>
+                </columns>
+                <items>
+                    <ColumnListItem
+                        id="_IDGenColumnListItem1"
+                        type="Navigation"
+                        press="onTableRowPress"
+                    >
+                        <cells>
+                            <Text
+                                id="_IDGenText60"
+                                text="{myModel>supplierid}"
+                            />
+                            <Text
+                                id="_IDGenText6"
+                                text="{myModel>vendorid}"
+                            />
+                            <Text
+                                id="_IDGenText7"
+                                text="{myModel>acmid}"
+                            />
+                            <Text
+                                id="_IDGenText8"
+                                text="{myModel>erpid}"
+                            />
+                        </cells>
+                    </ColumnListItem>
+                </items>
+            </Table>
+        </content>
+    </Page>
+</mvc:View>
