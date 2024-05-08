@@ -31,11 +31,7 @@
                                 titleUppercase="false"
                             >
                                 <uxap:blocks>
-                                    <Panel
-                                        id="_IDGenPanel1"
-                                        expandable="true"
-                                        width="auto"
-                                    >
+                                   
                                         <f:SimpleForm
                                             id="supplierForm1"
                                             layout="ResponsiveGridLayout"
@@ -89,10 +85,11 @@
                                                 id="_IDGenInput3"
                                                 value="08-05-2024"
                                                 editable="false"
+                                                displayFormatType=""
                                                 
                                             />
                                         </f:SimpleForm>
-                                    </Panel>
+                                   
                                 </uxap:blocks>
                             </uxap:ObjectPageSubSection>
                         </uxap:subSections>
@@ -104,11 +101,7 @@
                                 title="Supplier ID"
                             >
                                 <uxap:blocks>
-                                    <Panel
-                                        id="_IDGenPanel12"
-                                        expandable="true"
-                                        width="auto"
-                                    >
+                                   
                                         <f:SimpleForm
                                             id="supplierForm2"
                                             layout="ResponsiveGridLayout"
@@ -161,7 +154,7 @@
                                                 editable="false"
                                             />
                                         </f:SimpleForm>
-                                    </Panel>
+                                    
                                 </uxap:blocks>
                             </uxap:ObjectPageSubSection>
                         </uxap:subSections>
@@ -173,11 +166,7 @@
                                 title="Company profile (network)"
                             >
                                 <uxap:blocks>
-                                    <Panel
-                                        id="_IDGenPanel123"
-                                        expandable="true"
-                                        width="auto"
-                                    >
+                                   
                                         <f:SimpleForm
                                             id="supplierForm3"
                                             layout="ResponsiveGridLayout"
@@ -236,7 +225,7 @@
                                                 value=""
                                             />
                                         </f:SimpleForm>
-                                    </Panel>
+                                  
                                 </uxap:blocks>
                             </uxap:ObjectPageSubSection>
                         </uxap:subSections>
@@ -248,11 +237,7 @@
                                 title="Contacts"
                             >
                                 <uxap:blocks>
-                                    <Panel
-                                        id="_IDGenPanel1234"
-                                        expandable="true"
-                                        width="auto"
-                                    >
+                                   
                                         <f:SimpleForm
                                             id="supplierForm4"
                                             layout="ResponsiveGridLayout"
@@ -291,7 +276,7 @@
                                                 value=""
                                             />
                                         </f:SimpleForm>
-                                    </Panel>
+                                    
                                 </uxap:blocks>
                             </uxap:ObjectPageSubSection>
                         </uxap:subSections>
@@ -304,11 +289,7 @@
                                 title="Attachments"
                             >
                                 <uxap:blocks>
-                                    <Panel
-                                        id="_IDGenPanel0"
-                                        expandable="true"
-                                        width="auto"
-                                    >
+                                    
                                         <upload:UploadSetwithTable
                                             id="UploadSetTable"
                                             sticky="ColumnHeaders,HeaderToolbar"
@@ -527,7 +508,7 @@
                                                 </upload:UploadSetwithTableItem>
                                             </upload:items>
                                         </upload:UploadSetwithTable>
-                                    </Panel>
+                                    
                                 </uxap:blocks>
                             </uxap:ObjectPageSubSection>
                         </uxap:subSections>
@@ -539,11 +520,7 @@
                                 title="Qualifications"
                             >
                                 <uxap:blocks>
-                                    <Panel
-                                        id="_IDGenPanel101"
-                                        expandable="true"
-                                        width="auto"
-                                    >
+                                    
                                         <f:SimpleForm
                                             id="supplierForm7"
                                             layout="ResponsiveGridLayout"
@@ -600,7 +577,7 @@
                                                 value=""
                                             />
                                         </f:SimpleForm>
-                                    </Panel>
+                                   
                                 </uxap:blocks>
                             </uxap:ObjectPageSubSection>
                         </uxap:subSections>
