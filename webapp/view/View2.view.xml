@@ -65,6 +65,18 @@
                                     
                                                
                                             />
+                                            <Label
+                                                id="_IDGenLabel02"
+                                                text="Link to repository of opentext"
+                                                required="true"
+                                            />
+                                            <Link
+                                                id="_IDGenInput02"
+                                                text="Link to repository of opentext"
+
+                                    
+                                               
+                                            />
 
                                             <Label
                                                 id="_IDGenLabe"
