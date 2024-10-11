@@ -55,16 +55,18 @@
                                         />
                                         <Link
                                             id="_IDGenText2"
-                                            text="{aribaLink}"
+                                            href="https://s1-eu.ariba.com/Sourcing/Main/aw?awh=r&amp;awssk=mORR3Wq74B.rFj_C&amp;realm=744088967-T&amp;dard=1#b0"
+                                            text="https://s1-eu.ariba.com/Sourcing/Main/aw?awh=r&amp;awssk=mORR3Wq74B.rFj_C&amp;realm=744088967-T&amp;dard=1#b0"
+                                            target="_blank"
                                         />
-                                        <Label
+                                        <!-- <Label
                                             id="_IDGenLabel02"
                                             text="Link to repository of opentext"
                                         />
                                         <Link
                                             id="_IDGenText02"
                                             text=" {openText}"
-                                        />
+                                        /> -->
 
                                         <Label
                                             id="_IDGenLabe"
@@ -158,7 +160,7 @@
                                         labelSpanS="12"
                                         adjustLabelSpan="false"
                                     >
-                                        <Label
+                                        <!-- <Label
                                             id="_h1"
                                             text="Company aliases"
                                         />
@@ -183,7 +185,7 @@
                                         <Text
                                             id="h6"
                                             text="{revenue}"
-                                        />
+                                        /> -->
 
                                         <Label
                                             id="_h7"
@@ -362,152 +364,6 @@
                                             text="{vendorFeedbackStatus}"
                                         />
                                     </f:SimpleForm>
-                                </uxap:blocks>
-                            </uxap:ObjectPageSubSection>
-                        </uxap:subSections>
-                    </uxap:ObjectPageSection>
-                    <uxap:ObjectPageSection id="_IDGenObjectPageSection8">
-                        <uxap:subSections>
-                            <uxap:ObjectPageSubSection
-                                id="_IDGenObjectPageSubSection5"
-                                title="Certificate"
-                            >
-                                <uxap:blocks>
-                                    
-                                        <upload:UploadSetwithTable
-                                            id="UploadSetTable"
-                                            sticky="ColumnHeaders,HeaderToolbar"
-                                            width="auto"
-                                            fixedLayout="false"
-                                            inset="true"
-                                            autoPopinMode="true"
-                                            hiddenInPopin="None"
-                                            uploadCompleted="onUploadCompleted"
-                                            beforeInitiatingItemUpload="onBeforeInitiatingItemUpload"
-                                            beforeUploadStarts="onBeforeUploadStarts"
-                                            selectionChange="onSelectionChange"
-                                            itemRenamed="onDocumentRenamedSuccess"
-                                            mediaTypes="text/plain,application/msword,image/png"
-                                            maxFileNameLength="60"
-                                            uploadUrl="/uploadFiles"
-                                            multiple="true"
-                                            items="{sModel>/}"
-                                            mode="MultiSelect"
-                                            uploadEnabled="false"
-                                        >
-                                            <upload:headerToolbar>
-                                                <OverflowToolbar
-                                                    id="_IDGenOverflowToolbar1"
-                                                >
-                                                    <Title
-                                                        id="_IDGenTitle1"
-                                                        level="H2"
-                                                    />
-                                                    <ToolbarSpacer
-                                                        id="_IDGenToolbarSpacer3"
-                                                    />
-                                                   
-                                                        
-                                                    <ToolbarSeparator
-                                                        id="_IDGenToolbarSeparator1"
-                                                    />
-                                                   
-                                                </OverflowToolbar>
-                                            </upload:headerToolbar>
-                                            <upload:columns>
-                                                <Column
-                                                    id="filName"
-                                                    importance="High"
-                                                >
-                                                    <header>
-                                                        <Label
-                                                            id="_IDGenLa5"
-                                                            text="file Name"
-                                                        />
-                                                    </header>
-                                                </Column>
-                                                <!-- <Column
-                                                                id="fileName"
-                                                                importance="High"
-                                                            >
-                                                                <header>
-                                                                    <Label
-                                                                        id="_IDGenLabel6"
-                                                                        text="Name"
-                                                                    />
-                                                                </header>
-                                                            </Column> -->
-                                                <Column id="id">
-                                                    <header>
-                                                        <Label
-                                                            id="_IDGenLabel7"
-                                                            text="Type"
-                                                        />
-                                                    </header>
-                                                </Column>
-
-                                                <Column
-                                                    id="actionButton"
-                                                    importance="High"
-                                                />
-                                            </upload:columns>
-                                            <upload:items>
-                                                <upload:UploadSetwithTableItem
-                                                    id="_IDGenUploadSetwithTableItem1"
-                                                    fileName="{sModel>filename}"
-                                                    mediaType="{sModel>mediaType}"
-                                                >
-                                                    <!-- Cells with cell template defining content for each column (cells and columns work with 1:1 mapping) -->
-                                                    <upload:cells>
-                                                        <HBox id="_IDGenHBox2">
-                                                            <core:Icon
-                                                                id="_IDGenIcon1"
-                                                                src="{sModel>mediaType}"
-                                                                color="white"
-                                                                class="sapMUSTItemImage sapMUSTItemIcon"
-                                                            />
-                                                            <VBox
-                                                                id="_IDGenVBox1"
-                                                                class="sapUiTinyMargin sapUiSmallMarginBegin"
-                                                            >
-                                                                <Link
-                                                                    id="_IDGenLink3"
-                                                                    text="{sModel>filename}"
-                                                                    press="openPreview"
-                                                                    class="sapUiTinyMarginBottom"
-                                                                />
-                                                                <Text
-                                                                    id="_IDGenText10"
-                                                                    class="sapUiTinyMarginTop"
-                                                                />
-                                                            </VBox>
-                                                        </HBox>
-                                                        <!-- <Text
-                                                                        id="_IDGen"
-                                                                        text="{sModel>filename}"
-                                                                    /> -->
-
-                                                        <!-- <Text
-                                                                        id="_IDGenText11"
-                                                                        text="{sModel>name}"
-                                                                    /> -->
-                                                        <Text
-                                                            id="_IDGenLink2"
-                                                            text="{sModel>type}"
-                                                        />
-
-                                                        <Button
-                                                            id="_IDGenButton2"
-                                                            class="sapUiTinyMarginBegin"
-                                                            type="Transparent"
-                                                            icon="sap-icon://decline"
-                                                            press="onRemoveHandler"
-                                                        />
-                                                    </upload:cells>
-                                                </upload:UploadSetwithTableItem>
-                                            </upload:items>
-                                        </upload:UploadSetwithTable>
-                                    
                                 </uxap:blocks>
                             </uxap:ObjectPageSubSection>
                         </uxap:subSections>

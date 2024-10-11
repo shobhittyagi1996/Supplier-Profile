@@ -1,81 +1,78 @@
 <mvc:View
     controllerName="com.sap.supplier.controller.View1"
     xmlns:mvc="sap.ui.core.mvc"
-    displayBlock="true"
-    xmlns="sap.m"
-    xmlns:uxap="sap.uxap"
     xmlns:core="sap.ui.core"
-    xmlns:semantic="sap.f.semantic"
-     xmlns:upload="sap.m.upload"
-    xmlns:u="sap.ui.unified"
-    xmlns:f="sap.ui.layout.form"
-    xmlns:table="sap.ui.table"
-    xmlns:t="sap.f"
+    displayBlock="true"
+    xmlns="sap.f"
+    xmlns:sfb="sap.ui.comp.smartfilterbar"
+    xmlns:smartTable="sap.ui.comp.smarttable"
+    xmlns:sv="sap.ui.comp.smartvariants"
+    xmlns:m="sap.m"
 >
-    <Page
-        id="page1"
-        title="{i18n>title}"
+    <DynamicPage
+        id="dynamicPage"
+        fitContent="true"
     >
+        <header>
+            <DynamicPageHeader>
+                <sfb:SmartFilterBar
+                    id="smartFilterBar"
+                    entitySet="supplierProfileT"
+                    enableBasicSearch="true"
+                    basicSearchFieldName="smVendorId"
+                    persistencyKey="UniqueAndStablePersistencyKey"
+                >
+                    <!-- Defining Filter Fields for smVendorId, acmId, and erpId -->
+                    <sfb:controlConfiguration>
+                        <sfb:ControlConfiguration
+                            key="smVendorId"
+                            label="SM Vendor ID"
+                        />
+                        <sfb:ControlConfiguration
+                            key="acmId"
+                            label="ACM ID"
+                        />
+                        <sfb:ControlConfiguration
+                            key="erpId"
+                            label="ERP ID"
+                        />
+                    </sfb:controlConfiguration>
+
+                    <!-- Optionally add custom data -->
+                    <sfb:customData>
+                        <core:CustomData
+                            key="defaultFilterBarExpanded"
+                            value='{"smVendorId": "true", "acmId": "true", "erpId": "true"}'
+                        />
+                        <core:CustomData
+                            key="defaultShowAllFilters"
+                            value='{"smVendorId": "true", "acmId": "true", "erpId": "true"}'
+                        />
+                    </sfb:customData>
+                </sfb:SmartFilterBar>
+            </DynamicPageHeader>
+        </header>
+
         <content>
-            <Table
-                id="Table"
-                items="{/supplierProfileT}"
-            >
-                <columns>
-                    <Column id="_IDGenColumn11">
-                        <Text
-                            id="_IDGenText22"
-                            text="AN ID"
-                        />
-                    </Column>
-                    <Column id="_IDGenColumn1">
-                        <Text
-                            id="_IDGenText102"
-                            text="SM Vendor ID"
-                        />
-                    </Column>
-                    <Column id="_IDGenColumn2">
-                        <Text
-                            id="_IDGenText03"
-                            text="ACM ID"
-                        />
-                    </Column>
-                    <Column id="_IDGenColumn4">
-                        <Text
-                            id="_IDGenText41"
-                            text="ERP ID"
-                        />
-                    </Column>
-                </columns>
-                <items>
-                    <ColumnListItem
-                        id="_IDGenColumnListItem1"
-                        type="Navigation"
-                        press="onTableRowPress"
-                    >
-                        <cells>
-                            <Text
-                                id="_IDGenText60"
-                                text="{anId}"
-                            />
-                            <Text
-                                id="_IDGenText6"
-                                text="{smVendorId}"
-                            />
-                            <Text
-                                id="_IDGenText7"
-                                text="{acmId}"
-                            />
-                            <Text
-                                id="_IDGenText8"
-                                text="{erpId}"
-                            />
-                        </cells>
-                    </ColumnListItem>
-                </items>
-            </Table>
-           
+            <smartTable:SmartTable
+                id="supplierProfileTTable"
+                entitySet="supplierProfileT"
+                tableType="Table"
+                useVariantManagement="true"
+                initialise="onInitialise"
+                editable="true"
+                editTogglable="true"
+                initiallyVisibleFields="companyName,smVendorId,acmId,erpId,registrationStatus,registrationDate"
+                useTablePersonalisation="true"
+                header="Materials/Services"
+                showRowCount="true"
+                persistencyKey="SmartTableAnalytical_Explored"
+                enableAutoBinding="true"
+                demandPopin="true"
+                class="sapUiResponsiveContentPadding"
+                enableAutoColumnWidth="true"
+                fieldChange="onFieldChange"
+            />
         </content>
-      
-    </Page>
+    </DynamicPage>
 </mvc:View>
