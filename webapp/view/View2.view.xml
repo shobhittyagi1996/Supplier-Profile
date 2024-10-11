@@ -12,7 +12,7 @@
     xmlns="sap.m"
 >
     <Page
-        id="page"
+        id="page2"
         title="{i18n>title}"
     >
         <content>
@@ -44,23 +44,23 @@
                                             <Label
                                                 id="_IDGenLabel1"
                                                 text="Company Name "
-                                                required="true"
+                                                
                                                
                                             />
-                                            <Input
-                                                id="_IDGenInput1"
-                                                value="dubai Enterprises"
-                                                editable="false"
+                                            <Text
+                                                id="_IDGenText1"
+                                                text="{companyName}"
+                                               
                                             />
 
                                             <Label
                                                 id="_IDGenLabel2"
                                                 text="Link to SAP ARIBA"
-                                                required="true"
+                                                
                                             />
                                             <Link
-                                                id="_IDGenInput2"
-                                                text="Link to SAP ARIBA"
+                                                id="_IDGenText2"
+                                                text="{aribaLink}"
 
                                     
                                                
@@ -68,11 +68,11 @@
                                             <Label
                                                 id="_IDGenLabel02"
                                                 text="Link to repository of opentext"
-                                                required="true"
+                                                
                                             />
                                             <Link
-                                                id="_IDGenInput02"
-                                                text="Link to repository of opentext"
+                                                id="_IDGenText02"
+                                                text=" {openText}"
 
                                     
                                                
@@ -81,23 +81,22 @@
                                             <Label
                                                 id="_IDGenLabe"
                                                 text="Registration Status"
-                                                required="true"
+                                                
                                             />
-                                            <Input
+                                            <Text
                                                 id="_IDGenInpt3"
-                                                value="Registered"
-                                                editable="false"
+                                                text="{registrationStatus}"
+                                               
                                             />
                                             <Label
                                                 id="_IDGenLabel3"
                                                 text="Registration Date"
-                                                required="true"
+                                                
                                             />
-                                            <DatePicker
-                                                id="_IDGenInput3"
-                                                value="08-05-2024"
-                                                editable="false"
-                                                displayFormatType=""
+                                            <Text
+                                                id="_IDGenText3"
+                                                text="{registrationDate}"
+                                                
                                                 
                                             />
                                         </f:SimpleForm>
@@ -126,44 +125,44 @@
                                             <Label
                                                 id="_IDGenLabel11"
                                                 text="SM Vendor ID"
-                                                required="true"
+                                                
                                             />
-                                            <Input
-                                                id="_IDGenInput12"
-                                                value="SMVEN1001"
-                                                editable="false"
+                                            <Text
+                                                id="_IDGenText12"
+                                                text="{smVendorId}"
+                                                
                                             />
 
                                             <Label
                                                 id="_IDGenLabe2l2"
                                                 text="ACM ID"
-                                                required="true"
+                                                
                                             />
-                                            <Input
-                                                id="_IDGenInput122"
-                                                value="ACM20001"
-                                                editable="false"
+                                            <Text
+                                                id="_IDGenText122"
+                                                text="{acmId}"
+                                                
                                             />
 
                                             <Label
                                                 id="lb1"
                                                 text="ERP ID"
-                                                required="true"
+                                                
                                             />
-                                            <Input
+                                            <Text
                                                 id="lb2"
-                                                value="ERP10101"
-                                                editable="false"
+                                                text="{erpId}"
+                                               
                                             />
                                              <Label
                                                 id="lb3"
                                                 text="AN ID"
-                                                required="true"
+                                                
                                             />
-                                            <Input
+                                            <Text
                                                 id="lb4"
-                                                value="AN9012"
-                                                editable="false"
+                                                text="{anId}"
+                                                
                                             />
                                         </f:SimpleForm>
                                     
@@ -175,7 +174,7 @@
                         <uxap:subSections>
                             <uxap:ObjectPageSubSection
                                 id="IDGenObjectPageSubSection1223"
-                                title="Company profile (network)"
+                                title="Company profile"
                             >
                                 <uxap:blocks>
                                    
@@ -191,50 +190,50 @@
                                             <Label
                                                 id="_h1"
                                                 text="Company aliases"
-                                                required="true"
+                                                
                                             />
-                                            <Input
+                                            <Text
                                                 id="h2"
-                                                value=""
+                                                text="{companyAlias}"
                                             />
 
                                             <Label
                                                 id="_h3"
                                                 text="business type"
-                                                required="true"
+                                                
                                             />
-                                            <Input
+                                            <Text
                                                 id="h4"
-                                                value=""
+                                                text="{businessType}"
                                             />
 
                                             <Label
                                                 id="_h5"
                                                 text="revenue"
-                                                required="true"
+                                                
                                             />
-                                            <Input
+                                            <Text
                                                 id="h6"
-                                                value=""
+                                                text="{revenue}"
                                             />
 
                                             <Label
                                                 id="_h7"
                                                 text="address"
-                                                required="true"
+                                                
                                             />
-                                            <Input
+                                            <Text
                                                 id="h8"
-                                                value=""
+                                                text="{address}"
                                             />
                                             <Label
                                                 id="_h9"
                                                 text="supplier legal form"
-                                                required="true"
+                                                
                                             />
-                                            <Input
+                                            <Text
                                                 id="h10"
-                                                value=""
+                                                text="{legalForm}"
                                             />
                                         </f:SimpleForm>
                                   
@@ -262,30 +261,30 @@
                                             <Label
                                                 id="_q1"
                                                 text="Email"
-                                                required="true"
+                                                
                                             />
-                                            <Input
+                                            <Text
                                                 id="_q2"
-                                                value=""
+                                                text="{emailId}"
                                             />
 
                                             <Label
                                                 id="_q3"
                                                 text="Phone"
-                                                required="true"
+                                                
                                             />
-                                            <Input
+                                            <Text
                                                 id="_q4"
-                                                value=""
+                                                text="{phone}"
                                             />
                                             <Label
                                                 id="_q5"
                                                 text="Mobile "
-                                                required="true"
+                                                
                                             />
-                                            <Input
+                                            <Text
                                                 id="_q6"
-                                                value=""
+                                                text="{mobile}"
                                             />
                                         </f:SimpleForm>
                                     
@@ -294,233 +293,37 @@
                         </uxap:subSections>
                     </uxap:ObjectPageSection>
 
-                    <uxap:ObjectPageSection id="_IDGenObjectPageSection8">
+                      <uxap:ObjectPageSection id="_IDGenObjectPageSection07">
                         <uxap:subSections>
                             <uxap:ObjectPageSubSection
-                                id="_IDGenObjectPageSubSection5"
-                                title="Attachments"
+                                id="_IDGenObjectPageSubSection07"
+                                title="Commodity"
                             >
                                 <uxap:blocks>
                                     
-                                        <upload:UploadSetwithTable
-                                            id="UploadSetTable"
-                                            sticky="ColumnHeaders,HeaderToolbar"
-                                            width="auto"
-                                            fixedLayout="false"
-                                            inset="true"
-                                            autoPopinMode="true"
-                                            hiddenInPopin="None"
-                                            uploadCompleted="onUploadCompleted"
-                                            beforeInitiatingItemUpload="onBeforeInitiatingItemUpload"
-                                            itemValidationHandler=".itemValidationCallback"
-                                            beforeUploadStarts="onBeforeUploadStarts"
-                                            selectionChange="onSelectionChange"
-                                            itemRenamed="onDocumentRenamedSuccess"
-                                            mediaTypes="text/plain,application/msword,image/png"
-                                            maxFileNameLength="60"
-                                            uploadUrl="/uploadFiles"
-                                            multiple="true"
-                                            items="{sModel>/}"
-                                            mode="MultiSelect"
+                                        <f:SimpleForm
+                                            id="supplierForm07"
+                                            layout="ResponsiveGridLayout"
+                                            labelSpanXL="3"
+                                            labelSpanL="3"
+                                            labelSpanM="3"
+                                            labelSpanS="12"
+                                            adjustLabelSpan="false"
                                         >
-                                            <upload:headerToolbar>
-                                                <OverflowToolbar
-                                                    id="_IDGenOverflowToolbar1"
-                                                >
-                                                    <Title
-                                                        id="_IDGenTitle1"
-                                                        level="H2"
-                                                    />
-                                                    <ToolbarSpacer
-                                                        id="_IDGenToolbarSpacer3"
-                                                    />
-                                                    <SearchField
-                                                        id="_IDGenSearchField2"
-                                                        width="20%"
-                                                        liveChange=".onSearch"
-                                                    >
-                                                        <layoutData>
-                                                            <OverflowToolbarLayoutData
-                                                                id="_IDGenOverflowToolbarLayoutData3"
-                                                                priority="NeverOverflow"
-                                                            />
-                                                        </layoutData>
-                                                    </SearchField>
-                                                    <ToolbarSeparator
-                                                        id="_IDGenToolbarSeparator1"
-                                                    />
-                                                    <upload:ActionsPlaceholder
-                                                        id="_IDGenActionsPlaceholder1"
-                                                        placeholderFor="UploadButtonPlaceholder"
-                                                    />
-                                                    <Button
-                                                        id="downloadSelectedButton"
-                                                        text="Download"
-                                                        enabled="false"
-                                                        press="onDownloadFiles"
-                                                    />
-                                                    <MenuButton
-                                                        id="_IDGenMenuButton1"
-                                                        text="Add"
-                                                    >
-                                                        <menu>
-                                                            <Menu
-                                                                id="_IDGenMenu1"
-                                                            >
-                                                                <MenuItem
-                                                                    id="_IDGenMenuItem1"
-                                                                    text="URL"
-                                                                    press="openAddOrEditDialog"
-                                                                />
-                                                                <MenuItem
-                                                                    id="_IDGenMenuItem2"
-                                                                    text="Document Without File"
-                                                                    press=".openDocumentWithoutFileDialog"
-                                                                />
-                                                            </Menu>
-                                                        </menu>
-                                                        <layoutData>
-                                                            <OverflowToolbarLayoutData
-                                                                id="_IDGenOverflowToolbarLayoutData4"
-                                                                priority="AlwaysOverflow"
-                                                            />
-                                                        </layoutData>
-                                                    </MenuButton>
-                                                    <Button
-                                                        id="removeDocumentButton"
-                                                        text="Remove"
-                                                        press=".onRemoveButtonFromMenuDocumentHandler"
-                                                        enabled="false"
-                                                    >
-                                                        <layoutData>
-                                                            <OverflowToolbarLayoutData
-                                                                id="_IDGenOverflowToolbarLayoutData5"
-                                                                priority="AlwaysOverflow"
-                                                            />
-                                                        </layoutData>
-                                                    </Button>
-                                                    <Button
-                                                        id="renameButton"
-                                                        enabled="false"
-                                                        press="onRenameDocument"
-                                                        text="Rename"
-                                                    >
-                                                        <layoutData>
-                                                            <OverflowToolbarLayoutData
-                                                                id="_IDGenOverflowToolbarLayoutData6"
-                                                                priority="AlwaysOverflow"
-                                                            />
-                                                        </layoutData>
-                                                    </Button>
-                                                    <Button
-                                                        id="editUrlButton"
-                                                        text="Edit URL"
-                                                        enabled="false"
-                                                        press="onEditUrl"
-                                                    >
-                                                        <layoutData>
-                                                            <OverflowToolbarLayoutData
-                                                                id="_IDGenOverflowToolbarLayoutData7"
-                                                                priority="AlwaysOverflow"
-                                                            />
-                                                        </layoutData>
-                                                    </Button>
-                                                </OverflowToolbar>
-                                            </upload:headerToolbar>
-                                            <upload:columns>
-                                                <Column
-                                                    id="filName"
-                                                    importance="High"
-                                                >
-                                                    <header>
-                                                        <Label
-                                                            id="_IDGenLa5"
-                                                            text="file Name"
-                                                        />
-                                                    </header>
-                                                </Column>
-                                                <!-- <Column
-                                                                id="fileName"
-                                                                importance="High"
-                                                            >
-                                                                <header>
-                                                                    <Label
-                                                                        id="_IDGenLabel6"
-                                                                        text="Name"
-                                                                    />
-                                                                </header>
-                                                            </Column> -->
-                                                <Column id="id">
-                                                    <header>
-                                                        <Label
-                                                            id="_IDGenLabel7"
-                                                            text="Type"
-                                                        />
-                                                    </header>
-                                                </Column>
+                                            <Label
+                                                id="_Ci1"
+                                                text="Name"
+                                               
+                                            />
+                                            <Text
+                                                id="_C2"
+                                                text="{commodity}"
+                                            />
 
-                                                <Column
-                                                    id="actionButton"
-                                                    importance="High"
-                                                />
-                                            </upload:columns>
-                                            <upload:items>
-                                                <upload:UploadSetwithTableItem
-                                                    id="_IDGenUploadSetwithTableItem1"
-                                                    fileName="{sModel>filename}"
-                                                    mediaType="{sModel>mediaType}"
-                                                >
-                                                    <!-- Cells with cell template defining content for each column (cells and columns work with 1:1 mapping) -->
-                                                    <upload:cells>
-                                                        <HBox id="_IDGenHBox2">
-                                                            <core:Icon
-                                                                id="_IDGenIcon1"
-                                                                src="{sModel>mediaType}"
-                                                                color="white"
-                                                                class="sapMUSTItemImage sapMUSTItemIcon"
-                                                            />
-                                                            <VBox
-                                                                id="_IDGenVBox1"
-                                                                class="sapUiTinyMargin sapUiSmallMarginBegin"
-                                                            >
-                                                                <Link
-                                                                    id="_IDGenLink3"
-                                                                    text="{sModel>filename}"
-                                                                    press="openPreview"
-                                                                    class="sapUiTinyMarginBottom"
-                                                                />
-                                                                <Text
-                                                                    id="_IDGenText10"
-                                                                    class="sapUiTinyMarginTop"
-                                                                />
-                                                            </VBox>
-                                                        </HBox>
-                                                        <!-- <Text
-                                                                        id="_IDGen"
-                                                                        text="{sModel>filename}"
-                                                                    /> -->
-
-                                                        <!-- <Text
-                                                                        id="_IDGenText11"
-                                                                        text="{sModel>name}"
-                                                                    /> -->
-                                                        <Text
-                                                            id="_IDGenLink2"
-                                                            text="{sModel>type}"
-                                                        />
-
-                                                        <Button
-                                                            id="_IDGenButton2"
-                                                            class="sapUiTinyMarginBegin"
-                                                            type="Transparent"
-                                                            icon="sap-icon://decline"
-                                                            press="onRemoveHandler"
-                                                        />
-                                                    </upload:cells>
-                                                </upload:UploadSetwithTableItem>
-                                            </upload:items>
-                                        </upload:UploadSetwithTable>
-                                    
+                                            
+                                            
+                                        </f:SimpleForm>
+                                   
                                 </uxap:blocks>
                             </uxap:ObjectPageSubSection>
                         </uxap:subSections>
@@ -529,7 +332,7 @@
                         <uxap:subSections>
                             <uxap:ObjectPageSubSection
                                 id="_IDGenObjectPageSubSection7"
-                                title="Qualifications"
+                                title="Qualifications (if possible)"
                             >
                                 <uxap:blocks>
                                     
@@ -545,49 +348,78 @@
                                             <Label
                                                 id="_ai1"
                                                 text="Category"
-                                                required="true"
+                                                
                                             />
-                                            <Input
+                                            <Text
                                                 id="_ai2"
-                                                value=""
+                                                text="{category}"
                                             />
 
                                             <Label
                                                 id="_ai3"
-                                                text="Status"
-                                                required="true"
+                                                text="Pre-Qualification Status"
+                                                
                                             />
-                                            <Input
+                                            <Text
                                                 id="_ai4"
-                                                value=""
+                                                text="{preqStatus}"
                                             />
-                                            <Label
-                                                id="_ai5"
-                                                text="Owner"
-                                                required="true"
-                                            />
-                                            <Input
-                                                id="_ai6"
-                                                value=""
-                                            />
+                                            
                                             <Label
                                                 id="_ai7"
                                                 text="End date"
-                                                required="true"
+                                                
                                             />
-                                            <DatePicker
+                                            <Text
                                                 id="_ai8"
-                                                value=""
+                                                text="{preqExpiryDate}"
                                             />
+                                            
+                                        </f:SimpleForm>
+                                   
+                                </uxap:blocks>
+                            </uxap:ObjectPageSubSection>
+                        </uxap:subSections>
+                    </uxap:ObjectPageSection>
+                    <uxap:ObjectPageSection id="_IDGenObjectPageSection007">
+                        <uxap:subSections>
+                            <uxap:ObjectPageSubSection
+                                id="_IDGenObjectPageSubSection007"
+                                title="Statuses"
+                            >
+                                <uxap:blocks>
+                                    
+                                        <f:SimpleForm
+                                            id="supplierForm007"
+                                            layout="ResponsiveGridLayout"
+                                            labelSpanXL="3"
+                                            labelSpanL="3"
+                                            labelSpanM="3"
+                                            labelSpanS="12"
+                                            adjustLabelSpan="false"
+                                        >
                                             <Label
-                                                id="_ai9"
-                                                text="Action"
-                                                required="true"
+                                                id="_si1"
+                                                text="Ethical Due Diligence"
+                                               
                                             />
-                                            <Input
-                                                id="_ai10"
-                                                value=""
+                                            <Text
+                                                id="_s2"
+                                                text="{eddStatus}"
                                             />
+                                             <Label
+                                                id="_si2"
+                                                text="Vendor Feedback"
+                                               
+                                            />
+                                            <Text
+                                                id="_s02"
+                                                text="{vendorFeedbackStatus}"
+                                            />
+
+
+                                            
+                                            
                                         </f:SimpleForm>
                                    
                                 </uxap:blocks>

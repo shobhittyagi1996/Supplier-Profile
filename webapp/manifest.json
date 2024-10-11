@@ -15,6 +15,17 @@
       "version": "1.13.3",
       "toolsId": "a3cbac7d-2e16-4722-82b8-28b0bcda1fe1"
     },
+    "dataSources": {
+      "mainService": {
+        "uri": "/odata/v4/supplier-profile-srv/",
+        "type": "OData",
+        "settings": {
+          "annotations": [],
+          "localUri": "localService/metadata.xml",
+          "odataVersion": "4.0"
+        }
+      }
+    },
     "crossNavigation": {
       "inbounds": {
         "manage-manage": {
@@ -70,6 +81,15 @@
         "settings": {
           "bundleName": "com.sap.supplier.i18n.i18n"
         }
+      },
+      "": {
+        "dataSource": "mainService",
+        "preload": true,
+        "settings": {
+          "operationMode": "Server",
+          "autoExpandSelect": true,
+          "earlyRequests": true
+        }
       }
     },
     "resources": {
@@ -99,7 +119,7 @@
         },
         {
           "name": "RouteView2",
-          "pattern": "Supplier",
+          "pattern": "Supplier/:ID:",
           "target": [
             "TargetView2"
           ]

@@ -13,30 +13,30 @@
     xmlns:t="sap.f"
 >
     <Page
-        id="page"
+        id="page1"
         title="{i18n>title}"
     >
         <content>
             <Table
                 id="Table"
-                items="{myModel>/}"
+                items="{/supplierProfileT}"
             >
                 <columns>
                     <Column id="_IDGenColumn11">
                         <Text
                             id="_IDGenText22"
-                            text="Supplier ID"
+                            text="AN ID"
                         />
                     </Column>
                     <Column id="_IDGenColumn1">
                         <Text
-                            id="_IDGenText2"
+                            id="_IDGenText102"
                             text="SM Vendor ID"
                         />
                     </Column>
                     <Column id="_IDGenColumn2">
                         <Text
-                            id="_IDGenText3"
+                            id="_IDGenText03"
                             text="ACM ID"
                         />
                     </Column>
@@ -56,24 +56,26 @@
                         <cells>
                             <Text
                                 id="_IDGenText60"
-                                text="{myModel>supplierid}"
+                                text="{anId}"
                             />
                             <Text
                                 id="_IDGenText6"
-                                text="{myModel>vendorid}"
+                                text="{smVendorId}"
                             />
                             <Text
                                 id="_IDGenText7"
-                                text="{myModel>acmid}"
+                                text="{acmId}"
                             />
                             <Text
                                 id="_IDGenText8"
-                                text="{myModel>erpid}"
+                                text="{erpId}"
                             />
                         </cells>
                     </ColumnListItem>
                 </items>
             </Table>
+           
         </content>
+      
     </Page>
 </mvc:View>
