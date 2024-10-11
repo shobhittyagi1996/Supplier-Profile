@@ -31,76 +31,58 @@
                                 titleUppercase="false"
                             >
                                 <uxap:blocks>
-                                   
-                                        <f:SimpleForm
-                                            id="supplierForm1"
-                                            layout="ResponsiveGridLayout"
-                                            labelSpanXL="3"
-                                            labelSpanL="3"
-                                            labelSpanM="3"
-                                            labelSpanS="12"
-                                            adjustLabelSpan="false"
-                                        >
-                                            <Label
-                                                id="_IDGenLabel1"
-                                                text="Company Name "
-                                                
-                                               
-                                            />
-                                            <Text
-                                                id="_IDGenText1"
-                                                text="{companyName}"
-                                               
-                                            />
+                                    <f:SimpleForm
+                                        id="supplierForm1"
+                                        layout="ResponsiveGridLayout"
+                                        labelSpanXL="3"
+                                        labelSpanL="3"
+                                        labelSpanM="3"
+                                        labelSpanS="12"
+                                        adjustLabelSpan="false"
+                                    >
+                                        <Label
+                                            id="_IDGenLabel1"
+                                            text="Company Name "
+                                        />
+                                        <Text
+                                            id="_IDGenText1"
+                                            text="{companyName}"
+                                        />
 
-                                            <Label
-                                                id="_IDGenLabel2"
-                                                text="Link to SAP ARIBA"
-                                                
-                                            />
-                                            <Link
-                                                id="_IDGenText2"
-                                                text="{aribaLink}"
+                                        <Label
+                                            id="_IDGenLabel2"
+                                            text="Link to SAP ARIBA"
+                                        />
+                                        <Link
+                                            id="_IDGenText2"
+                                            text="{aribaLink}"
+                                        />
+                                        <Label
+                                            id="_IDGenLabel02"
+                                            text="Link to repository of opentext"
+                                        />
+                                        <Link
+                                            id="_IDGenText02"
+                                            text=" {openText}"
+                                        />
 
-                                    
-                                               
-                                            />
-                                            <Label
-                                                id="_IDGenLabel02"
-                                                text="Link to repository of opentext"
-                                                
-                                            />
-                                            <Link
-                                                id="_IDGenText02"
-                                                text=" {openText}"
-
-                                    
-                                               
-                                            />
-
-                                            <Label
-                                                id="_IDGenLabe"
-                                                text="Registration Status"
-                                                
-                                            />
-                                            <Text
-                                                id="_IDGenInpt3"
-                                                text="{registrationStatus}"
-                                               
-                                            />
-                                            <Label
-                                                id="_IDGenLabel3"
-                                                text="Registration Date"
-                                                
-                                            />
-                                            <Text
-                                                id="_IDGenText3"
-                                                text="{registrationDate}"
-                                                
-                                                
-                                            />
-                                        </f:SimpleForm>
-                                   
+                                        <Label
+                                            id="_IDGenLabe"
+                                            text="Registration Status"
+                                        />
+                                        <Text
+                                            id="_IDGenInpt3"
+                                            text="{registrationStatus}"
+                                        />
+                                        <Label
+                                            id="_IDGenLabel3"
+                                            text="Registration Date"
+                                        />
+                                        <Text
+                                            id="_IDGenText3"
+                                            text="{registrationDate}"
+                                        />
+                                    </f:SimpleForm>
                                 </uxap:blocks>
                             </uxap:ObjectPageSubSection>
                         </uxap:subSections>
@@ -112,60 +94,50 @@
                                 title="Supplier ID"
                             >
                                 <uxap:blocks>
-                                   
-                                        <f:SimpleForm
-                                            id="supplierForm2"
-                                            layout="ResponsiveGridLayout"
-                                            labelSpanXL="3"
-                                            labelSpanL="3"
-                                            labelSpanM="3"
-                                            labelSpanS="12"
-                                            adjustLabelSpan="false"
-                                        >
-                                            <Label
-                                                id="_IDGenLabel11"
-                                                text="SM Vendor ID"
-                                                
-                                            />
-                                            <Text
-                                                id="_IDGenText12"
-                                                text="{smVendorId}"
-                                                
-                                            />
+                                    <f:SimpleForm
+                                        id="supplierForm2"
+                                        layout="ResponsiveGridLayout"
+                                        labelSpanXL="3"
+                                        labelSpanL="3"
+                                        labelSpanM="3"
+                                        labelSpanS="12"
+                                        adjustLabelSpan="false"
+                                    >
+                                        <Label
+                                            id="_IDGenLabel11"
+                                            text="SM Vendor ID"
+                                        />
+                                        <Text
+                                            id="_IDGenText12"
+                                            text="{smVendorId}"
+                                        />
 
-                                            <Label
-                                                id="_IDGenLabe2l2"
-                                                text="ACM ID"
-                                                
-                                            />
-                                            <Text
-                                                id="_IDGenText122"
-                                                text="{acmId}"
-                                                
-                                            />
+                                        <Label
+                                            id="_IDGenLabe2l2"
+                                            text="ACM ID"
+                                        />
+                                        <Text
+                                            id="_IDGenText122"
+                                            text="{acmId}"
+                                        />
 
-                                            <Label
-                                                id="lb1"
-                                                text="ERP ID"
-                                                
-                                            />
-                                            <Text
-                                                id="lb2"
-                                                text="{erpId}"
-                                               
-                                            />
-                                             <Label
-                                                id="lb3"
-                                                text="AN ID"
-                                                
-                                            />
-                                            <Text
-                                                id="lb4"
-                                                text="{anId}"
-                                                
-                                            />
-                                        </f:SimpleForm>
-                                    
+                                        <Label
+                                            id="lb1"
+                                            text="ERP ID"
+                                        />
+                                        <Text
+                                            id="lb2"
+                                            text="{erpId}"
+                                        />
+                                        <Label
+                                            id="lb3"
+                                            text="AN ID"
+                                        />
+                                        <Text
+                                            id="lb4"
+                                            text="{anId}"
+                                        />
+                                    </f:SimpleForm>
                                 </uxap:blocks>
                             </uxap:ObjectPageSubSection>
                         </uxap:subSections>
@@ -177,66 +149,59 @@
                                 title="Company profile"
                             >
                                 <uxap:blocks>
-                                   
-                                        <f:SimpleForm
-                                            id="supplierForm3"
-                                            layout="ResponsiveGridLayout"
-                                            labelSpanXL="3"
-                                            labelSpanL="3"
-                                            labelSpanM="3"
-                                            labelSpanS="12"
-                                            adjustLabelSpan="false"
-                                        >
-                                            <Label
-                                                id="_h1"
-                                                text="Company aliases"
-                                                
-                                            />
-                                            <Text
-                                                id="h2"
-                                                text="{companyAlias}"
-                                            />
+                                    <f:SimpleForm
+                                        id="supplierForm3"
+                                        layout="ResponsiveGridLayout"
+                                        labelSpanXL="3"
+                                        labelSpanL="3"
+                                        labelSpanM="3"
+                                        labelSpanS="12"
+                                        adjustLabelSpan="false"
+                                    >
+                                        <Label
+                                            id="_h1"
+                                            text="Company aliases"
+                                        />
+                                        <Text
+                                            id="h2"
+                                            text="{companyAlias}"
+                                        />
 
-                                            <Label
-                                                id="_h3"
-                                                text="business type"
-                                                
-                                            />
-                                            <Text
-                                                id="h4"
-                                                text="{businessType}"
-                                            />
+                                        <Label
+                                            id="_h3"
+                                            text="business type"
+                                        />
+                                        <Text
+                                            id="h4"
+                                            text="{businessType}"
+                                        />
 
-                                            <Label
-                                                id="_h5"
-                                                text="revenue"
-                                                
-                                            />
-                                            <Text
-                                                id="h6"
-                                                text="{revenue}"
-                                            />
+                                        <Label
+                                            id="_h5"
+                                            text="revenue"
+                                        />
+                                        <Text
+                                            id="h6"
+                                            text="{revenue}"
+                                        />
 
-                                            <Label
-                                                id="_h7"
-                                                text="address"
-                                                
-                                            />
-                                            <Text
-                                                id="h8"
-                                                text="{address}"
-                                            />
-                                            <Label
-                                                id="_h9"
-                                                text="supplier legal form"
-                                                
-                                            />
-                                            <Text
-                                                id="h10"
-                                                text="{legalForm}"
-                                            />
-                                        </f:SimpleForm>
-                                  
+                                        <Label
+                                            id="_h7"
+                                            text="address"
+                                        />
+                                        <Text
+                                            id="h8"
+                                            text="{address}"
+                                        />
+                                        <Label
+                                            id="_h9"
+                                            text="supplier legal form"
+                                        />
+                                        <Text
+                                            id="h10"
+                                            text="{legalForm}"
+                                        />
+                                    </f:SimpleForm>
                                 </uxap:blocks>
                             </uxap:ObjectPageSubSection>
                         </uxap:subSections>
@@ -248,82 +213,71 @@
                                 title="Contacts"
                             >
                                 <uxap:blocks>
-                                   
-                                        <f:SimpleForm
-                                            id="supplierForm4"
-                                            layout="ResponsiveGridLayout"
-                                            labelSpanXL="3"
-                                            labelSpanL="3"
-                                            labelSpanM="3"
-                                            labelSpanS="12"
-                                            adjustLabelSpan="false"
-                                        >
-                                            <Label
-                                                id="_q1"
-                                                text="Email"
-                                                
-                                            />
-                                            <Text
-                                                id="_q2"
-                                                text="{emailId}"
-                                            />
+                                    <f:SimpleForm
+                                        id="supplierForm4"
+                                        layout="ResponsiveGridLayout"
+                                        labelSpanXL="3"
+                                        labelSpanL="3"
+                                        labelSpanM="3"
+                                        labelSpanS="12"
+                                        adjustLabelSpan="false"
+                                    >
+                                        <Label
+                                            id="_q1"
+                                            text="Email"
+                                        />
+                                        <Text
+                                            id="_q2"
+                                            text="{emailId}"
+                                        />
 
-                                            <Label
-                                                id="_q3"
-                                                text="Phone"
-                                                
-                                            />
-                                            <Text
-                                                id="_q4"
-                                                text="{phone}"
-                                            />
-                                            <Label
-                                                id="_q5"
-                                                text="Mobile "
-                                                
-                                            />
-                                            <Text
-                                                id="_q6"
-                                                text="{mobile}"
-                                            />
-                                        </f:SimpleForm>
-                                    
+                                        <Label
+                                            id="_q3"
+                                            text="Phone"
+                                        />
+                                        <Text
+                                            id="_q4"
+                                            text="{phone}"
+                                        />
+                                        <Label
+                                            id="_q5"
+                                            text="Mobile "
+                                        />
+                                        <Text
+                                            id="_q6"
+                                            text="{mobile}"
+                                        />
+                                    </f:SimpleForm>
                                 </uxap:blocks>
                             </uxap:ObjectPageSubSection>
                         </uxap:subSections>
                     </uxap:ObjectPageSection>
 
-                      <uxap:ObjectPageSection id="_IDGenObjectPageSection07">
+                    <uxap:ObjectPageSection id="_IDGenObjectPageSection07">
                         <uxap:subSections>
                             <uxap:ObjectPageSubSection
                                 id="_IDGenObjectPageSubSection07"
                                 title="Commodity"
                             >
                                 <uxap:blocks>
-                                    
-                                        <f:SimpleForm
-                                            id="supplierForm07"
-                                            layout="ResponsiveGridLayout"
-                                            labelSpanXL="3"
-                                            labelSpanL="3"
-                                            labelSpanM="3"
-                                            labelSpanS="12"
-                                            adjustLabelSpan="false"
-                                        >
-                                            <Label
-                                                id="_Ci1"
-                                                text="Name"
-                                               
-                                            />
-                                            <Text
-                                                id="_C2"
-                                                text="{commodity}"
-                                            />
-
-                                            
-                                            
-                                        </f:SimpleForm>
-                                   
+                                    <f:SimpleForm
+                                        id="supplierForm07"
+                                        layout="ResponsiveGridLayout"
+                                        labelSpanXL="3"
+                                        labelSpanL="3"
+                                        labelSpanM="3"
+                                        labelSpanS="12"
+                                        adjustLabelSpan="false"
+                                    >
+                                        <Label
+                                            id="_Ci1"
+                                            text="Name"
+                                        />
+                                        <Text
+                                            id="_C2"
+                                            text="{commodity}"
+                                        />
+                                    </f:SimpleForm>
                                 </uxap:blocks>
                             </uxap:ObjectPageSubSection>
                         </uxap:subSections>
@@ -335,48 +289,42 @@
                                 title="Qualifications (if possible)"
                             >
                                 <uxap:blocks>
-                                    
-                                        <f:SimpleForm
-                                            id="supplierForm7"
-                                            layout="ResponsiveGridLayout"
-                                            labelSpanXL="3"
-                                            labelSpanL="3"
-                                            labelSpanM="3"
-                                            labelSpanS="12"
-                                            adjustLabelSpan="false"
-                                        >
-                                            <Label
-                                                id="_ai1"
-                                                text="Category"
-                                                
-                                            />
-                                            <Text
-                                                id="_ai2"
-                                                text="{category}"
-                                            />
+                                    <f:SimpleForm
+                                        id="supplierForm7"
+                                        layout="ResponsiveGridLayout"
+                                        labelSpanXL="3"
+                                        labelSpanL="3"
+                                        labelSpanM="3"
+                                        labelSpanS="12"
+                                        adjustLabelSpan="false"
+                                    >
+                                        <Label
+                                            id="_ai1"
+                                            text="Category"
+                                        />
+                                        <Text
+                                            id="_ai2"
+                                            text="{category}"
+                                        />
 
-                                            <Label
-                                                id="_ai3"
-                                                text="Pre-Qualification Status"
-                                                
-                                            />
-                                            <Text
-                                                id="_ai4"
-                                                text="{preqStatus}"
-                                            />
-                                            
-                                            <Label
-                                                id="_ai7"
-                                                text="End date"
-                                                
-                                            />
-                                            <Text
-                                                id="_ai8"
-                                                text="{preqExpiryDate}"
-                                            />
-                                            
-                                        </f:SimpleForm>
-                                   
+                                        <Label
+                                            id="_ai3"
+                                            text="Pre-Qualification Status"
+                                        />
+                                        <Text
+                                            id="_ai4"
+                                            text="{preqStatus}"
+                                        />
+
+                                        <Label
+                                            id="_ai7"
+                                            text="End date"
+                                        />
+                                        <Text
+                                            id="_ai8"
+                                            text="{preqExpiryDate}"
+                                        />
+                                    </f:SimpleForm>
                                 </uxap:blocks>
                             </uxap:ObjectPageSubSection>
                         </uxap:subSections>
@@ -388,40 +336,183 @@
                                 title="Statuses"
                             >
                                 <uxap:blocks>
+                                    <f:SimpleForm
+                                        id="supplierForm007"
+                                        layout="ResponsiveGridLayout"
+                                        labelSpanXL="3"
+                                        labelSpanL="3"
+                                        labelSpanM="3"
+                                        labelSpanS="12"
+                                        adjustLabelSpan="false"
+                                    >
+                                        <Label
+                                            id="_si1"
+                                            text="Ethical Due Diligence"
+                                        />
+                                        <Text
+                                            id="_s2"
+                                            text="{eddStatus}"
+                                        />
+                                        <Label
+                                            id="_si2"
+                                            text="Vendor Feedback"
+                                        />
+                                        <Text
+                                            id="_s02"
+                                            text="{vendorFeedbackStatus}"
+                                        />
+                                    </f:SimpleForm>
+                                </uxap:blocks>
+                            </uxap:ObjectPageSubSection>
+                        </uxap:subSections>
+                    </uxap:ObjectPageSection>
+                    <uxap:ObjectPageSection id="_IDGenObjectPageSection8">
+                        <uxap:subSections>
+                            <uxap:ObjectPageSubSection
+                                id="_IDGenObjectPageSubSection5"
+                                title="Certificate"
+                            >
+                                <uxap:blocks>
                                     
-                                        <f:SimpleForm
-                                            id="supplierForm007"
-                                            layout="ResponsiveGridLayout"
-                                            labelSpanXL="3"
-                                            labelSpanL="3"
-                                            labelSpanM="3"
-                                            labelSpanS="12"
-                                            adjustLabelSpan="false"
+                                        <upload:UploadSetwithTable
+                                            id="UploadSetTable"
+                                            sticky="ColumnHeaders,HeaderToolbar"
+                                            width="auto"
+                                            fixedLayout="false"
+                                            inset="true"
+                                            autoPopinMode="true"
+                                            hiddenInPopin="None"
+                                            uploadCompleted="onUploadCompleted"
+                                            beforeInitiatingItemUpload="onBeforeInitiatingItemUpload"
+                                            beforeUploadStarts="onBeforeUploadStarts"
+                                            selectionChange="onSelectionChange"
+                                            itemRenamed="onDocumentRenamedSuccess"
+                                            mediaTypes="text/plain,application/msword,image/png"
+                                            maxFileNameLength="60"
+                                            uploadUrl="/uploadFiles"
+                                            multiple="true"
+                                            items="{sModel>/}"
+                                            mode="MultiSelect"
                                         >
-                                            <Label
-                                                id="_si1"
-                                                text="Ethical Due Diligence"
-                                               
-                                            />
-                                            <Text
-                                                id="_s2"
-                                                text="{eddStatus}"
-                                            />
-                                             <Label
-                                                id="_si2"
-                                                text="Vendor Feedback"
-                                               
-                                            />
-                                            <Text
-                                                id="_s02"
-                                                text="{vendorFeedbackStatus}"
-                                            />
+                                            <upload:headerToolbar>
+                                                <OverflowToolbar
+                                                    id="_IDGenOverflowToolbar1"
+                                                >
+                                                    <Title
+                                                        id="_IDGenTitle1"
+                                                        level="H2"
+                                                    />
+                                                    <ToolbarSpacer
+                                                        id="_IDGenToolbarSpacer3"
+                                                    />
+                                                   
+                                                        
+                                                    <ToolbarSeparator
+                                                        id="_IDGenToolbarSeparator1"
+                                                    />
+                                                    <upload:ActionsPlaceholder
+                                                        id="_IDGenActionsPlaceholder1"
+                                                        placeholderFor="UploadButtonPlaceholder"
+                                                    />
+                                                   
+                                                    
+                                                    
+                                                </OverflowToolbar>
+                                            </upload:headerToolbar>
+                                            <upload:columns>
+                                                <Column
+                                                    id="filName"
+                                                    importance="High"
+                                                >
+                                                    <header>
+                                                        <Label
+                                                            id="_IDGenLa5"
+                                                            text="file Name"
+                                                        />
+                                                    </header>
+                                                </Column>
+                                                <!-- <Column
+                                                                id="fileName"
+                                                                importance="High"
+                                                            >
+                                                                <header>
+                                                                    <Label
+                                                                        id="_IDGenLabel6"
+                                                                        text="Name"
+                                                                    />
+                                                                </header>
+                                                            </Column> -->
+                                                <Column id="id">
+                                                    <header>
+                                                        <Label
+                                                            id="_IDGenLabel7"
+                                                            text="Type"
+                                                        />
+                                                    </header>
+                                                </Column>
 
+                                                <Column
+                                                    id="actionButton"
+                                                    importance="High"
+                                                />
+                                            </upload:columns>
+                                            <upload:items>
+                                                <upload:UploadSetwithTableItem
+                                                    id="_IDGenUploadSetwithTableItem1"
+                                                    fileName="{sModel>filename}"
+                                                    mediaType="{sModel>mediaType}"
+                                                >
+                                                    <!-- Cells with cell template defining content for each column (cells and columns work with 1:1 mapping) -->
+                                                    <upload:cells>
+                                                        <HBox id="_IDGenHBox2">
+                                                            <core:Icon
+                                                                id="_IDGenIcon1"
+                                                                src="{sModel>mediaType}"
+                                                                color="white"
+                                                                class="sapMUSTItemImage sapMUSTItemIcon"
+                                                            />
+                                                            <VBox
+                                                                id="_IDGenVBox1"
+                                                                class="sapUiTinyMargin sapUiSmallMarginBegin"
+                                                            >
+                                                                <Link
+                                                                    id="_IDGenLink3"
+                                                                    text="{sModel>filename}"
+                                                                    press="openPreview"
+                                                                    class="sapUiTinyMarginBottom"
+                                                                />
+                                                                <Text
+                                                                    id="_IDGenText10"
+                                                                    class="sapUiTinyMarginTop"
+                                                                />
+                                                            </VBox>
+                                                        </HBox>
+                                                        <!-- <Text
+                                                                        id="_IDGen"
+                                                                        text="{sModel>filename}"
+                                                                    /> -->
 
-                                            
-                                            
-                                        </f:SimpleForm>
-                                   
+                                                        <!-- <Text
+                                                                        id="_IDGenText11"
+                                                                        text="{sModel>name}"
+                                                                    /> -->
+                                                        <Text
+                                                            id="_IDGenLink2"
+                                                            text="{sModel>type}"
+                                                        />
+
+                                                        <Button
+                                                            id="_IDGenButton2"
+                                                            class="sapUiTinyMarginBegin"
+                                                            type="Transparent"
+                                                            icon="sap-icon://decline"
+                                                            press="onRemoveHandler"
+                                                        />
+                                                    </upload:cells>
+                                                </upload:UploadSetwithTableItem>
+                                            </upload:items>
+                                        </upload:UploadSetwithTable>
+                                    
                                 </uxap:blocks>
                             </uxap:ObjectPageSubSection>
                         </uxap:subSections>
