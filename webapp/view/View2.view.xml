@@ -393,6 +393,7 @@
                                             multiple="true"
                                             items="{sModel>/}"
                                             mode="MultiSelect"
+                                            uploadEnabled="false"
                                         >
                                             <upload:headerToolbar>
                                                 <OverflowToolbar
@@ -410,13 +411,7 @@
                                                     <ToolbarSeparator
                                                         id="_IDGenToolbarSeparator1"
                                                     />
-                                                    <upload:ActionsPlaceholder
-                                                        id="_IDGenActionsPlaceholder1"
-                                                        placeholderFor="UploadButtonPlaceholder"
-                                                    />
                                                    
-                                                    
-                                                    
                                                 </OverflowToolbar>
                                             </upload:headerToolbar>
                                             <upload:columns>
